@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> </title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+            </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+            </script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+            </script>
+        <script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-database.js"></script>
+        <!-- Moment JS Link-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+        
+        <!-- Google Font Link -->
+        <link href="https://fonts.googleapis.com/css?family=Audiowide|Baloo|Saira+Stencil+One&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
+        
+        <!-- Font Awesome Link -->
+        <script src="https://kit.fontawesome.com/dad5aebbf2.js"></script>
+
+</head>
+
+<body>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <div id="page-container" class="container-fluid">
+   
+        <div id="wrapper" class="row">
+            <div id="left" class="col-9 xx-colScroll">
+            </div>
+            <div id="right" class="col-3">
+               <h3>view current game scores or overall team standings</h3>
+                    <button id="standings">Standings</button>
+                    <button id="scores">Scores</button>
+                    <h3>Select a city to see its current weather</h3>
+                    <select class="custom-select" id="inputGroupSelect01">
+                        <option selected>Choose...</option>
+                        <option value="4671240">Texas Rangers-Arlington,TX</option>
+                        <option value="5128638">Yankees-New York,NY</option>
+                        <option value="4180439">Braves-Atlanta,GA</option>
+                        <option value="4164138">Marlins-Miami,FL</option>
+                        <option value="4560349">Phillies-Philadelphia,PA</option>
+                        <option value="4366164">Nationals-Washington DC</option>
+                        <option value="5128638">Mets-New York,NY</option>
+                        <option value="4887398">Cubs-Chicago,IL</option>
+                        <option value="4887398">White Sox-Chicago,IL</option>
+                        <option value="4508722">Reds-Cincinnati,OH</option>
+                        <option value="5263045">Brewers-Milwaukee,WI</option>
+                        <option value="5206379">Pirates-Pittsburgh,PA</option>
+                        <option value="4407074">Cardinals-St. Louis,MO</option>
+                        <option value="5308655">Diamondbacks-Phoenix,AZ</option>
+                        <option value="5419384">Rockies-Denver,CO</option>
+                        <option value="5368361">Dodgers-Los Angeles,CA</option>
+                        <option value="5391811">Padres-San Diego,CA</option>
+                        <option value="5341430">Giants-San Francisco,CA</option>
+                        <option value="4347778">Orioles-Baltimore,MD</option>
+                        <option value="4930956">Red Sox-Boston,MA</option>
+                        <option value="4174757">Rays-Tampa Bay,FL</option>
+                        <option value="6167865">Blue Jays-Toronto,ON CA</option>
+                        <option value="5150529">Indians-Cleveland,OH</option>
+                        <option value="4990729">Tigers-Detroit,MI</option>
+                        <option value="4393217">Royals-Kansas City,MO</option>
+                        <option value="5037649">Twins-Minneapolis,MN</option>
+                        <option value="5368361">Angels-Los Angelos,CA</option>
+                        <option value="5378538">Athletics-Oakland,CA</option>
+                        <option value="5809844">Mariners-Seattle,WA</option>
+                        <option value="4699066">Astros-Houston,TX</option>
+                    
+                    
+                    
+                    </select>
+                    <button id="lookUpCity" class="button">⚾Look At The Weather</button><br><br><br>
+                    <div class="city"></div><br>
+                    <div class="wind"></div><br>
+                    <div class="humidity"></div><br>
+                    <div class="temp"></div><br>
+                    <button id="randomFact" class="button">Random Facts⚾</button><br><br>
+                    <div id="factsDisplay"></div><br>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script> -->
+        <script src="standings.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

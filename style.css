@@ -1,0 +1,379 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+     background-color: burlywood !important;
+
+}
+#particles-js {
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  display: flex;
+  justify-content: center;
+}
+.infoBox {
+  display: flex;
+  justify-content: center;
+  min-height: min-content;
+  width: 50%;
+  background-color: red;
+  z-index: 0;
+  align-items: center;
+}
+.wholeBody {
+  height: 100%;
+  width: 100%;
+  opacity: 1;
+}
+.particles-js-canvas-el {
+  position: absolute;
+  z-index: -1;
+}
+.inputBox {
+  height: 20px;
+}
+.playerCard {
+    background-color: lightgray;
+    box-shadow: 1px 1px 4px 2px black;
+    margin: 4px;
+    height: 400px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.playerCard-Name{
+    height: min-content;
+    width: min-content;
+    display: flex;
+    flex-direction: row;
+    margin-top: 5px;
+}
+.playerCard-Name > * {
+    margin: 5px;
+}
+.playerCard-Image {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+}
+.playerCard-Image > * {
+max-width: 100%;
+max-height: 100%;
+}
+.playerCard-Information {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+.mainCardsContainer {
+    width: 100%;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+}
+
+#page-container{
+  /* background-color: rgb(80, 72, 72); */
+height:100%;
+filter: blur(0px) brightness(100%) saturate(82%) sepia(50%)
+}
+#left{
+height:100%;
+background-color:burlywood;
+display: flex;
+flex-direction: column;
+
+}
+
+#right{
+   height:100%;
+   display: flex;
+   flex-direction: column;
+   overflow: scroll;
+   font-family: "Catamaran";
+   background-color: burlywood;
+}
+#wrapper{
+    height: 100%;
+    width: 100%;
+    top: 0;
+    padding-top: 60px;
+    padding-bottom: 50px;
+    display: flex;
+    
+}
+#textheader{
+   height:60px;
+   background-color:#000;
+   color:white;
+ font-family: "Lato";
+   z-index:55;
+   margin-left: -15px;
+   margin-right: -15px;
+   font-size: 45px;
+   font-weight: 700;
+
+}
+#menu{
+   max-height:250px;
+       overflow-y: auto;
+}
+
+
+
+.navbar {
+   background-color: black;
+   color: white;
+}
+
+.navbar-toggler {
+   border-color: blue;
+}
+
+.navbar-toggler:hover {
+   -moz-box-shadow: 0 0 20px #ccc;
+   -webkit-box-shadow: 0 0 20px #ccc;
+   box-shadow: 0 0 20px #ccc;
+}
+
+.fa-align-justify {
+   color: blue;
+}
+
+#nav-title {
+   /*
+   font-family: 'Saira Stencil One', cursive;
+   */
+   font-family: 'Audiowide', cursive;
+}
+
+.dropdown-menu {
+   background-color: #ffc3a0;
+}
+
+.dropdown-item:hover {
+   background-color: black;
+   color: #ffc3a0;
+}
+
+#score-title {
+   font-family: 'Audiowide', cursive;
+   font-size: 60px;
+}
+
+.card {
+   width: 100%;
+}
+
+.card-header {
+   background-color: black;
+   color: #ffc3a0;
+   font-family: 'Audiowide', cursive;
+   font-size: 25px;
+}
+
+.your-team-name {
+   padding: 0 20;
+}
+
+.your-team-name {
+   display: inline;
+   vertical-align: middle;
+}
+
+/* important */
+.your-team-scores {
+   padding: 5 20 20 20;
+}
+
+#vs-opponent {
+   margin-bottom: 5px;
+   background-color: #ffc3a0;
+}
+
+#vs-opponent:hover {
+   background-color: black;
+   color: #ffc3a0;
+}
+
+/*----------------------*/
+/* Particles Background */
+
+
+#particles-js {
+   width: 100%;
+   height: 100%;
+   z-index: -1;
+   display: flex;
+   justify-content: center;
+}
+
+.infoBox {
+   display: flex;
+   justify-content: center;
+   min-height: min-content;
+   width: 50%;
+   background-color: red;
+   z-index: 0;
+   align-items: center;
+}
+
+.wholeBody {
+   height: 100%;
+   width: 100%;
+   opacity: 1;
+}
+
+.particles-js-canvas-el {
+   position: absolute;
+   z-index: -1;
+}
+
+.inputBox {
+   height: 20px;
+}
+
+#standings {
+   background-color: white;
+}
+
+#standings-tables {
+}
+
+.leagues {
+   padding: 0 100px;
+   color: white;
+}
+
+.table {
+   margin: 0px !important;
+}
+
+.standings-losses {
+   text-align: center;
+}
+
+.standings-wins {
+   text-align: center;
+}
+
+.xx-colScroll{
+    overflow: scroll;
+}
+body {
+    background-color: #cc2b5e;
+}
+
+/*----------------------*/
+/*--------Navbar--------*/
+.navbar {
+    background-color: black;
+    color: white;
+}
+
+.navbar-toggler {
+    border-color: blue;
+}
+
+.navbar-toggler:hover {
+    -moz-box-shadow: 0 0 20px #ccc;
+    -webkit-box-shadow: 0 0 20px #ccc;
+    box-shadow: 0 0 20px #ccc;
+}
+
+.fa-align-justify {
+    color: blue;
+}
+
+#nav-title {
+    /*
+    font-family: 'Saira Stencil One', cursive;
+    */
+    font-family: 'Audiowide', cursive;
+}
+
+.dropdown-menu {
+    background-color: #ffc3a0;
+}
+
+.dropdown-item:hover {
+    background-color: black;
+    color: #ffc3a0;
+}
+
+/*--------Navbar--------*/
+/*----------------------*/
+
+/*----------------------*/
+/*------Score Page------*/
+.card {
+    width: 100%;
+}
+
+#score-title {
+    font-family: 'Audiowide', cursive;
+    font-size: 60px;
+}
+
+.score-table {
+    border-style: solid;
+    border-color: black;
+    background-color: #ffc3a0;
+}
+
+.score-table:hover {
+    border-color: #ffc3a0;
+    background-color: black;
+    color: #ffc3a0;
+}
+
+#date-search {
+    float: right;
+}
+
+.card {
+    background-color: unset;
+    border: none;
+}
+
+.card-body {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-column-gap: 10%;
+    grid-row-gap: 12px;
+    padding-left: 0px !important;
+    background-color: burlywood;
+    border-style: none;
+}
+
+/*------Score Page------*/
+/*----------------------*/
+
+/*----------------------*/
+/*----Standings Page----*/
+#standings {
+    border-style: solid;
+    border-color: black;
+    background-color: #ffc3a0;
+}
+
+button {
+    border-style: solid;
+    border-color: black;
+    background-color: #ffc3a0;
+}
+
+button:hover {
+    border-color: #ffc3a0 !important;
+    background-color: black !important;
+    color: #ffc3a0;
+}
+
+/*----Standings Page----*/
+/*----------------------*/
